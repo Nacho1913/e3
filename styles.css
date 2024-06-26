@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: "Radio Canada Big", sans-serif;
     background-color: var(--background);
@@ -23,6 +27,7 @@ body{
 .logo{
     width: 8rem;
     height: 8rem;
+    color: var(--btnColor);
 }
 
 header{
@@ -64,6 +69,18 @@ p{
     align-items: center;
     padding: 10rem 0 5rem 0;
     gap: 2rem;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .art1{
@@ -89,6 +106,18 @@ p{
     align-items: center;
     padding: 0 6rem 0 6rem;
     gap: 2rem;
+    animation: myAnima 2s ease-in 1s 1 normal backwards;
+}
+@keyframes myAnima {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .artSolo{
@@ -105,6 +134,18 @@ p{
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    animation: myAnimac 2s ease-in 4s 1 normal backwards;
+}
+@keyframes myAnimac {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 .infoCards{
@@ -244,3 +285,169 @@ button {
    button:hover::before {
     width: 100%;
    }
+
+   footer{
+    width: 100vw;
+    /* height: 70px; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: var(--componentTerceary);
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .logoFooter1{
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+   }
+
+   .logoFooter{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+   }
+
+   .containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 70px;
+   }
+
+   .containerFooter > .divFooter{
+    display: flex;
+    gap: 3rem;
+   }
+
+   .pFooter{
+    font-size: .8rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+    nav{
+        width: 75%;
+    }
+    .hero{
+        gap: 0;
+        position: relative;
+        right: 2rem;
+        /* animation: none; */
+    }
+    .art1 {
+        width: 214px;
+    }
+    .about{
+        width: 80%;
+        animation: none;
+    }
+
+    .cards{
+        width: 80%;
+        animation: none;
+    }
+
+    .cardsContent{
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+    }
+    .contact{
+        padding: 0rem 5rem;
+    }
+    .picContact{
+        display: none;
+    }
+    .formContact {
+        margin-right: 6rem;
+        margin-bottom: 1rem;
+    }
+    .part1Form {
+        gap: 3rem;
+    }
+    .containerFooter {
+        margin-right: 160px;
+
+    }
+    .pFooter {
+        margin-right: 160px;
+    }
+}
+
+
+@media (max-width:576px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        width: 100%;
+        height: 8rem;
+    }
+    .logo{
+        display: none;
+    }
+
+    nav{
+       
+            padding: .5rem;
+            width: 100%;
+        
+    }
+    
+    .hero{
+        width: 300px;
+        margin-left: 4rem;
+        flex-direction: column-reverse;
+        animation: none;
+    }
+
+    .img1 {
+        width: 290px;
+        height: 350px;
+    }
+
+    .about{
+        display: contents;
+    }
+    .artSolo{
+        margin-left: 1rem;
+    }
+
+    .cards{
+        margin-left: 2.5rem;
+    }
+    .cardsContent{
+        width: auto;
+    }
+
+    .formContact{
+        text-align: center;
+        margin-left: -30px;
+        
+    }
+
+    .part1Form{
+        flex-wrap: wrap;
+        
+    }
+
+    .btn{
+        left: 25%;
+    }
+
+    .containerFooter{
+        margin-right: 42px;
+    }
+
+    .pFooter{
+        margin-right: 42px;
+    }
+}
