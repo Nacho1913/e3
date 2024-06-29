@@ -23,431 +23,289 @@ body{
     font-family: "Radio Canada Big", sans-serif;
     background-color: var(--background);
 }
+header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--componentTerceary);
+}
 
 .logo{
-    width: 8rem;
-    height: 8rem;
-    color: var(--btnColor);
-}
-
-header{
-    width: 100vw;
-    height: 3.5rem;
-    background: linear-gradient(var(--component), var(--background));
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    position: fixed;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 85%;
-    position: fixed;
+    height: 100px;
 }
 
 ul{
     display: flex;
+    font-size: 12px;
+    gap: .7rem;
     list-style: none;
-    gap: 3rem;
 }
 
-a{
+ul > li > a{
+    color: var(--text);
     text-decoration: none;
-    color: var(--text);
-}
-
-p{
-    color: var(--text);
 }
 
 .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10rem 0 5rem 0;
-    gap: 2rem;
-    animation: myAnim 2s ease 0s 1 normal forwards;
-}
-@keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.art1{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: .50rem;
-    color: var(--text);
-}
-
-.art1 > h1{
-    color: var(--btnColor);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        margin-bottom: 4rem;
 }
 
 .img1{
-    width: 350px;
-    height: 350px;
+    height: 200px;
+    
 }
 
-.about{
+.art1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 6rem 0 6rem;
-    gap: 2rem;
-    animation: myAnima 2s ease-in 1s 1 normal backwards;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+    color: var(--text);
 }
-@keyframes myAnima {
-	0% {
-		opacity: 0;
-		transform: translateX(250px);
-	}
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+.art1>h1{
+    color: var(--btnColor);
 }
 
 .artSolo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    text-align: center;
+
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        font-weight: 500;
+        padding: .5rem;
+    
+    
 }
 
 .cards{
     display: flex;
+    gap: 1rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    animation: myAnimac 2s ease-in 4s 1 normal backwards;
-}
-@keyframes myAnimac {
-	0% {
-		opacity: 0;
-		transform: scale(1.4);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
+    padding: .5rem;
+    margin-top: 4rem;
 }
 
 .infoCards{
-    text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: .5rem;
+    
+}
+
+h2{
     color: var(--btnColor);
 }
 
-.cardsContent{
-    display: flex;
-    width: 100vh;
-    justify-content: center;
-    gap: 5rem;
+.contactame{
+    text-align: center;
     margin-top: 3rem;
 }
 
-.picCard{
-    height:270px ;
-    width: 270px ;
-    border-radius: 1rem;
+.infoCards>p{
+    color: var(--text);
 }
 
 .cardIndividual{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    color: var(--text);
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: var(--componentTerceary);
-    text-align: center;
-    cursor: pointer;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        background: radial-gradient(circle, var(--component) 0%, var(--background)  100%);
+        padding: .5rem;
+        border-radius: 1rem;
 }
 
-.contentCard{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+.picCard{
+    height: 200px;
+    border-radius: 1rem;
 }
 
 .contentCard > h2{
     color: var(--btnColor);
 }
+.contentCard > p{
+    color: var(--text);
+}
 
 .contact{
-    display: flex;
-    padding: 5rem;
-    color: var(--text);
-    justify-content: space-around;
-    align-items: center;
-}
-.formContact{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.formContact > h2{
-    color: var(--btnColor);
-}
-
-form{
+.formContact {
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 1rem;
-}
-
-.form1{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+    color: var(--btnColor);
+    margin-bottom: 1rem;
 }
 
 .part1Form{
-    display: flex;
-    gap: 1rem;
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
 }
 
-
-.mensaje{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.form1{
+    
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem;
+    
 }
 
 .input{
-    border: solid 1.5px var(--btnColor);
-    border-radius: 1rem;
-    background: none;
-    padding: 1rem;
-    font-size: 1rem;
-    color: var(--text);
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    background-color: var(--component);
+    color: white;
+    border-style: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px var(--btnColor);
+    text-shadow: 0px 0px 5px rgba(0,0,0,.75);
+}
+
+.btn {
+    background: #03C988;
+    background-image: -webkit-linear-gradient(top, #03C988, #1C82AD);
+    background-image: -moz-linear-gradient(top, #03C988, #1C82AD);
+    background-image: -ms-linear-gradient(top, #03C988, #1C82AD);
+    background-image: -o-linear-gradient(top, #03C988, #1C82AD);
+    background-image: linear-gradient(to bottom, #03C988, #1C82AD);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    text-shadow: 0px 0px 0px #666666;
+    -webkit-box-shadow: 0px 0px 6px #03C988;
+    -moz-box-shadow: 0px 0px 6px #03C988;
+    box-shadow: 0px 0px 6px #03C988;
+    color: #ffffff;
+    padding: 8px 17px 8px 17px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #1C82AD;
+    background-image: -webkit-linear-gradient(top, #1C82AD, #03C988);
+    background-image: -moz-linear-gradient(top, #1C82AD, #03C988);
+    background-image: -ms-linear-gradient(top, #1C82AD, #03C988);
+    background-image: -o-linear-gradient(top, #1C82AD, #03C988);
+    background-image: linear-gradient(to bottom, #1C82AD, #03C988);
+    text-decoration: none;
+  }
+
+.picContact{
+    display: flex;
+    justify-content: center;
+}
+
+.logoFooter{
+    height: 40px;
+    margin: 0 1rem 0 1rem;
     
 }
 
-.img2{
-    width: 400px;
-    height: 400px;
-}
-
-button {
-    width: 110px;
-    padding: 10px 20px;
-    border: unset;
-    border-radius: 15px;
-    color: var(--text);
-    z-index: 1;
-    background: var(--btnColor);
-    position: relative;
-    left: 38%;
-    font-weight: 1000;
-    font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
-    overflow: hidden;
-   }
-   
-   button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: var(--component);
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-   }
-   
-   button:hover {
-    color: #e8e8e8;
-   }
-   
-   button:hover::before {
-    width: 100%;
-   }
-
-   footer{
-    width: 100vw;
-    /* height: 70px; */
+footer{
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    background-color: var(--componentTerceary);
-    margin-top: auto;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-   }
-
-   .logoFooter1{
-    width: 130px;
-    height: 130px;
-    cursor: pointer;
-   }
-
-   .logoFooter{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-   }
-
-   .containerFooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 70px;
-   }
-
-   .containerFooter > .divFooter{
-    display: flex;
-    gap: 3rem;
-   }
-
-   .pFooter{
-    font-size: .8rem;
-    padding-left: 3rem;
-    padding-bottom: 1rem;
+    color: var(--text);
+    background-color: var(--componentTerceary);
+    padding: 1rem;
 }
 
-@media (max-width:768px) {
-    nav{
-        width: 75%;
-    }
+@media(min-width:768px){
     .hero{
-        gap: 0;
-        position: relative;
-        right: 2rem;
-        /* animation: none; */
-    }
-    .art1 {
-        width: 214px;
-    }
-    .about{
-        width: 80%;
-        animation: none;
+        flex-direction: row;
+        margin-top: 4rem;
+        padding: 3rem;
+        margin-bottom: 3rem;
     }
 
-    .cards{
-        width: 80%;
-        animation: none;
-    }
-
-    .cardsContent{
-        flex-direction: column;
-        gap: 2rem;
-        width: 80%;
-    }
-    .contact{
-        padding: 0rem 5rem;
-    }
-    .picContact{
-        display: none;
-    }
-    .formContact {
-        margin-right: 6rem;
-        margin-bottom: 1rem;
-    }
-    .part1Form {
-        gap: 3rem;
-    }
-    .containerFooter {
-        margin-right: 160px;
-
-    }
-    .pFooter {
-        margin-right: 160px;
-    }
-}
-
-
-@media (max-width:576px) {
-    body{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    header {
-        width: 100%;
-        height: 8rem;
-    }
-    .logo{
-        display: none;
-    }
-
-    nav{
-       
-            padding: .5rem;
-            width: 100%;
-        
-    }
-    
-    .hero{
-        width: 300px;
-        margin-left: 4rem;
-        flex-direction: column-reverse;
-        animation: none;
-    }
-
-    .img1 {
-        width: 290px;
-        height: 350px;
-    }
-
-    .about{
-        display: contents;
-    }
     .artSolo{
-        margin-left: 1rem;
+        padding: 0 3rem 0 3rem;
+        gap:1.5rem;
+    }
+    
+    .cardIndividual{
+        flex-direction: row;
+        padding: 1.5rem;
     }
 
-    .cards{
-        margin-left: 2.5rem;
+    .contact{
+        margin: 2rem 1rem 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
     }
+    
+
+    .form1{
+        align-items: center;
+    }
+
+    input{
+        /* width: 90%; */
+
+    }
+
+}
+
+@media (min-width: 1024px){
+    ul{
+        gap: 5rem;
+        font-size: 16px;
+    }
+    
+    .hero{
+        gap: 2rem;
+    }
+
+    .art1{
+        text-align: start;
+        width: 500px;
+        gap: 1rem;
+    }
+
+    .img1{
+        height: 300px;
+    }
+
     .cardsContent{
-        width: auto;
+        display: flex;
+        gap: 1.5rem;
+        padding: 1rem;
     }
 
-    .formContact{
-        text-align: center;
-        margin-left: -30px;
-        
+    .cardIndividual{
+        flex-direction: column;
     }
 
-    .part1Form{
-        flex-wrap: wrap;
-        
-    }
-
-    .btn{
-        left: 25%;
-    }
-
-    .containerFooter{
-        margin-right: 42px;
-    }
-
-    .pFooter{
-        margin-right: 42px;
+    input{
+        width: 300px;
     }
 }
